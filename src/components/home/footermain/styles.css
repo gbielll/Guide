@@ -1,0 +1,53 @@
+.footerMain-conatainer {
+   display: flex;
+   padding: 50px;
+
+   justify-content: center;
+
+
+   width: 100%;
+   height: auto;
+   background-color: #FFEA29;
+   box-shadow: 0px 10px 15px rgba(255, 0, 0, 0.775);
+}
+
+.footermain-box {
+   padding: auto;
+   display: flex;
+
+   width: 100%;
+   height: auto;
+
+   flex-direction: row;
+   gap: 30px;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+
+
+}
+
+
+.footermain-one {
+   width: 280px;
+   height: 40px;
+   background-color: aqua;
+}
+
+.footermain-two {
+   width: 280px;
+   height: 40px;
+   background-color: rgb(0, 0, 0);
+}
+
+.footermain-three {
+   width: 280px;
+   height: 40px;
+   background-color: aqua;
+}
+
+.footermain-four {
+   width: 280px;
+   height: 40px;
+   background-color: aqua;
+}

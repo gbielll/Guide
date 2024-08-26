@@ -8,14 +8,18 @@
 }
 
 .topbar-container {
-    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 95%;
     height: 80px;
-    background-color: #F9F3FB;;
-    position: relative;
+    background-color: #f9f3fb7c;
+    position: fixed;
+    top: 0; /* Garante que o menu fique no topo da tela */
+    left: 0;
+    right: 0;
+    margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona um espaço abaixo */
+    z-index: 1000; /* Mantém o menu acima de outros elementos */
 }
 
 h1 {
@@ -32,12 +36,11 @@ ul {
     font-weight: 550;
     color: #171717;
 }
-
-button {
+.topbar-button {
     background-color: transparent;
     border: 2.5px solid #171717;
     color: #171717;
-    padding: 10px 60px; /*defina assim tamanho de button*/
+    padding: 8px 70px; /*defina assim tamanho de button*/
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -64,7 +67,7 @@ button {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #f9f3fb7c;;
+    background-color: #f9f3fb7c;
     justify-content: center;
     align-items: center;
     z-index: 1000;

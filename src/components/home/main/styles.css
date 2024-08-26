@@ -1,5 +1,143 @@
-.main-container{
-    width: 100%;
-    height: 100px;
+.main-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 75vh; /* 75% da altura da tela */
     background-color: aqua;
+    margin: 50px auto;
+}
+
+
+
+.main-container .right {
+    
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-image: url("https://i.pinimg.com/564x/0d/0a/a2/0d0aa2bb25e5291740cfa0d356410205.jpg");
+    background-size: cover; Faz com que a imagem cubra toda a área da div 
+    background-position: center; Centraliza a imagem dentro da div 
+    background-repeat: no-repeat;  Impede que a imagem se repita */
+}
+
+.main-container .box-text{
+     width: 75%;
+     height: 60%;
+     display: flex;
+     background-color: transparent;
+     flex-direction: column;
+     justify-content: space-between;
+     gap: 20px;
+   
+}
+
+.main-container .main-h1 {
+    background-color: transparent;
+    font-size: 2.2rem; /* Tamanho da fonte */
+    color: #1E1E1E; /* Cor do texto */
+    text-align: justify; /* Justifica o texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+}
+
+.main-container .main-p {
+    background-color: transparent;
+    font-size: 1.0rem;
+    color: #1E1E1E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+}
+
+
+.main-button {
+    background-color: #FFEA29; /* Cor de fundo do botão */
+    width: 225px; /* Largura do botão */
+    height: 48px; /* Altura do botão */
+    padding: 0; /* Remove o padding para garantir o tamanho exato */
+    margin: auto 0px; /* Centraliza o botão horizontalmente, ajuste se necessário */
+    border: none; /* Remove qualquer borda padrão */
+    border-radius: 12px; /* Arredonda os cantos do botão */
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    font-size: 1rem; /* Ajusta o tamanho da fonte conforme necessário */
+    cursor: pointer; /* Adiciona um cursor de pointer para interação */
+    box-sizing: border-box; /* Inclui a borda nas dimensões do botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra preta meio ofuscada */
+    color: #303030; /* Cor do texto */
+    font-weight: 450;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin:20% auto;
+        background-color: #1e1e1e00;
+        background-image: url('../images/mobile_app.png');
+        background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+        background-position: center; /* Centraliza a imagem no elemento */
+        background-repeat: no-repeat; /* Evita que a imagem se repita */
+    }
+
+    .main-container .left {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main-container .right {
+        display: none; /* Oculta a seção da direita em telas pequenas */
+    }
+    
+
+    .main-container .main-h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    
+    .main-container .main-p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .main-container .box-text{
+        width: 85%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+      
+   }
+
+   .main-button{
+    width: 100%;
+    
+   }
+
+
+    
+}
+
+@media (max-width: 1420px) {
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+    }
 }

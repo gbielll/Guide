@@ -1,0 +1,73 @@
+.objtivos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 10%;
+    width: 100%;
+    height: 90vh;
+    gap: 10px;
+
+    background-color: #343434;
+    box-shadow: 0px 10px 15px rgba(255, 251, 4, 0.5);
+
+}
+
+.objetivos-left{
+    display: flex;
+    justify-content: center;
+    padding: 10% 5%;
+    
+    background-color: transparent;
+    
+    width: 45%;
+    height: auto;
+
+    
+}
+
+.objetivos-right{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+
+    width: 45%;
+    height: auto;
+}
+
+
+
+p{
+    background-color: transparent;
+    font-size: 1.0rem; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    text-align: justify; /* Justifica o texto */
+}
+
+
+
+@media (max-width: 768px) {
+
+    .objtivos-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    
+    }
+
+    .objetivos-left{
+        width: 100%;  
+    }
+
+    .objetivos-right{
+        width: 100%;
+    }
+
+    p{
+        text-align: justify;
+    }
+    
+}

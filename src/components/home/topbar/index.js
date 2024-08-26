@@ -38,7 +38,7 @@ function TopBar() {
                 <li>Team Guide</li>
             </ul>
 
-            <button className="download-button">Download</button>
+            <button className="topbar-button download-button">Download</button>
         </div>
     );
 }
